@@ -560,7 +560,8 @@
     { text: "Get a girlfriend. A sane one this time", author: "Batli special" },
     { text: "Chummi lele par budday sabse best ho", author: "You know who" },
     { text: "Glad we became friends and glad to have you as my bully friend but bully karna band karde na bhai mujhe😭 Nevertheless you is great Have a great day✨️😌", author: "Nandini" },
-    { text: "Happy birthday to the ultimate all-in-one package! You casually top the class, crush every life skill, and still remain the most humble, caring person who brings smiles to everyone. You deserve the absolute world!", author: "Reshu" }
+    { text: "Happy birthday to the ultimate all-in-one package! You casually top the class, crush every life skill, and still remain the most humble, caring person who brings smiles to everyone. You deserve the absolute world!", author: "Reshu" },
+    { text: "Congratulations on surviving another year of being yourself. Thank you for making irritating me your full-time job and arguing with me like there's a prize money involved. Honestly, I don't know how I tolerate you, but I guess some friendships are worth the mental damage. 😂 Here's to more arguments, stupid conversations and endless nonsense. Don't change (actually, please consider it). Have the best birthday! ❤️", author: "Alan"}
   ];
 
   function makeId() {
