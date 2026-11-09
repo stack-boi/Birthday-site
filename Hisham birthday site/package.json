@@ -1,0 +1,13 @@
+{
+  "name": "hisham-23-birthday",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A little retro birthday website for Hisham's 23rd.",
+  "scripts": {
+    "gallery": "node scripts/build-gallery.mjs",
+    "build": "node scripts/build-gallery.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.8"
+  }
+}

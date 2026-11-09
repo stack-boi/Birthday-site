@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hisham · 23 — Oldie hai aur goldie bhi</title>
+  <meta name="description" content="A little retro birthday website for Hisham's 23rd — spinning records, proper IEMs and a blueberry-cherry cheesecake.">
+  <meta name="theme-color" content="#f8eddd">
+  <meta property="og:title" content="Hisham · 23 — Oldie hai aur goldie bhi">
+  <meta property="og:description" content="A little retro birthday website for Hisham's 23rd — spinning records, proper IEMs and a blueberry-cherry cheesecake.">
+  <meta property="og:type" content="website">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23231b17'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23c8683b'/%3E%3Ccircle cx='32' cy='32' r='2.5' fill='%23f8eddd'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to the music</a>
+
+  <header class="site-head">
+    <a href="#top" class="brand" aria-label="Hisham 23, back to top">
+      <span class="brand-disc" aria-hidden="true"></span>
+      <span class="brand-name">Hisham <span>/ 23</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#listening">Listening room</a>
+      <a href="#ears">The IEMs</a>
+      <a href="#side-b">Side B</a>
+      <a href="#cake">Cake</a>
+      <a href="#gallery">Polaroids</a>
+      <a href="#sleeve">Sign the sleeve</a>
+    </nav>
+    <button class="btn btn-small btn-confetti" type="button" data-confetti>
+      Confetti <span aria-hidden="true">✦</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Side A · 23 years on repeat · 33⅓ rpm</p>
+        <h1>
+          <span class="h1-kicker">Happy birthday,</span>
+          <span class="h1-name">Hisham<span class="h1-period">.</span></span>
+        </h1>
+        <p class="tagline"><span>Oldie hai</span><span class="tagline-mid">aur</span><span>goldie bhi</span></p>
+        <p class="lede">Twenty-three years of good taste, better ears, and playlists that make a room feel warmer. Even with poor choices in girls your music taste and your kindeness alwasy was the best.</p>
+        <div class="hero-actions">
+          <a href="#listening" class="btn btn-primary">
+            Drop the needle
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <button class="btn btn-ghost" type="button" data-confetti>One more confetti</button>
+        </div>
+        <dl class="hero-meta">
+          <div><dt>Turning</dt><dd>23</dd></div>
+          <div><dt>Pressings</dt><dd>03</dd></div>
+          <div><dt>Replays</dt><dd>∞</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-sleeve" aria-hidden="true">
+          <span class="hero-sleeve-top">Oldie &amp; Goldie Records · GLD-2303</span>
+          <span class="hero-sleeve-letter">H</span>
+          <span class="hero-sleeve-name">Hisham<br>Twenty Three</span>
+          <span class="hero-sleeve-line"></span>
+          <span class="hero-sleeve-side">Side A / Side B</span>
+        </div>
+
+        <div class="hero-vinyl-wrap" data-tilt>
+          <div class="hero-vinyl vinyl" aria-hidden="true">
+            <div class="record-label disc-label hero-label">
+              <span class="rl-top">Oldie &amp; Goldie Records</span>
+              <span class="rl-num">23</span>
+              <span class="rl-name">Hisham · Side A</span>
+            </div>
+          </div>
+          <span class="badge-23" aria-hidden="true">23</span>
+          <span class="speed-sticker" aria-hidden="true">33⅓ rpm<br><em>warm press</em></span>
+        </div>
+
+        <div class="now-chip">
+          <span class="eq eq-small" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span class="now-chip-text"><em>Now spinning</em><strong id="heroNow">Cherry On Top</strong></span>
+        </div>
+
+        <p class="hero-note" aria-hidden="true">a tiny website, pressed on vinyl</p>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Oldie hai aur goldie bhi</span><span class="sep">✦</span>
+        <span>Happy 23rd, Hisham</span><span class="sep">✦</span>
+        <span>Side A</span><span class="sep">✦</span>
+        <span>33⅓ rpm</span><span class="sep">✦</span>
+        <span>Blueberry cheesecake</span><span class="sep">✦</span>
+        <span>Listen closely</span><span class="sep">✦</span>
+        <span>Oldie hai aur goldie bhi</span><span class="sep">✦</span>
+        <span>Happy 23rd, Hisham</span><span class="sep">✦</span>
+        <span>Side A</span><span class="sep">✦</span>
+        <span>33⅓ rpm</span><span class="sep">✦</span>
+        <span>Blueberry cheesecake</span><span class="sep">✦</span>
+        <span>Listen closely</span><span class="sep">✦</span>
+      </div>
+    </div>
+
+    <div class="wire-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path class="wire-path" d="M-20 58 C 180 8, 360 88, 560 48 S 900 6, 1100 52 S 1320 84, 1460 40"/>
+        <path class="wire-signal" d="M-20 58 C 180 8, 360 88, 560 48 S 900 6, 1100 52 S 1320 84, 1460 40"/>
+      </svg>
+      <span class="wire-jack"><i></i></span>
+    </div>
+
+    <section class="section listening" id="listening">
+      <div class="section-head reveal">
+        <p class="section-kicker">01 — The listening room</p>
+        <h2>Cue up <em>twenty-three.</em></h2>
+        <p class="section-sub">Three little loops, made to sound like a warm room and a well-loved record. Pick a pressing from the crate, drop the needle, and let the platter do the rest.</p>
+      </div>
+
+      <div class="player glass reveal" id="player">
+        <div class="player-main">
+          <div class="deck">
+            <div class="deck-brand">
+              <span class="deck-logo" aria-hidden="true"></span>
+              Goldie Hi-Fi <span class="deck-model">model 23</span>
+            </div>
+            <span class="deck-screw deck-screw-a" aria-hidden="true"></span>
+            <span class="deck-screw deck-screw-b" aria-hidden="true"></span>
+
+            <div class="platter-area">
+              <div class="platter">
+                <div class="pressing vinyl" id="pressing" aria-hidden="true">
+                  <div class="pressing-label disc-label">
+                    <span class="pl-side">Side A · 33⅓</span>
+                    <span class="pl-track" id="pressingTitle">Cherry On Top</span>
+                    <span class="pl-artist">Oldie &amp; Goldie Records</span>
+                  </div>
+                  <span class="pl-hole" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <div class="tonearm" aria-hidden="true">
+                <span class="tonearm-base"><i></i></span>
+                <span class="tonearm-arm">
+                  <span class="counterweight"></span>
+                  <span class="headshell"></span>
+                </span>
+              </div>
+            </div>
+
+            <div class="deck-screen">
+              <div class="deck-screen-main">
+                <span class="deck-screen-kicker">Now playing</span>
+                <strong id="deckTitle">Cherry On Top</strong>
+                <span id="deckSub">warm keys · slow groove</span>
+              </div>
+              <div class="deck-progress-wrap">
+                <div class="deck-progress"><span id="deckProgress"></span></div>
+                <div class="deck-time"><span id="timeNow">0:00</span><span id="timeTotal">2:47</span></div>
+              </div>
+            </div>
+
+            <div class="deck-controls">
+              <button class="play-btn" id="playBtn" type="button" aria-label="Play record" aria-pressed="false">
+                <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.4v14H7zM13.6 5H17v14h-3.4z" fill="currentColor"/></svg>
+              </button>
+
+              <div class="control-cluster">
+                <span class="control-label" id="speedLabel">Speed</span>
+                <div class="speed-toggle" role="group" aria-labelledby="speedLabel">
+                  <button type="button" class="is-active" data-speed="33" aria-pressed="true">33⅓</button>
+                  <button type="button" data-speed="45" aria-pressed="false">45</button>
+                </div>
+              </div>
+
+              <div class="control-cluster control-vol">
+                <label class="control-label" for="volume">Volume</label>
+                <input id="volume" type="range" min="0" max="100" value="70" aria-label="Turntable volume">
+              </div>
+
+              <div class="viz" id="viz" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="crate">
+            <div class="crate-head"><span>In the crate</span><span class="mono">03 pressings</span></div>
+            <ul class="tracklist" id="tracklist">
+              <li>
+                <button type="button" class="track is-active" data-track="0" aria-pressed="true">
+                  <span class="track-disc" style="--disc:#c8683b"></span>
+                  <span class="track-info"><strong>Cherry On Top</strong><em>warm keys · slow groove</em></span>
+                  <span class="track-dur">2:47</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="track" data-track="1" aria-pressed="false">
+                  <span class="track-disc" style="--disc:#7a5a9e"></span>
+                  <span class="track-info"><strong>Blueberry Static</strong><em>dreamy · after hours</em></span>
+                  <span class="track-dur">3:12</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="track" data-track="2" aria-pressed="false">
+                  <span class="track-disc" style="--disc:#2e6f68"></span>
+                  <span class="track-info"><strong>Oldie Goldie</strong><em>swing · feel-good</em></span>
+                  <span class="track-dur">2:31</span>
+                </button>
+              </li>
+            </ul>
+            <div class="crate-stats">
+              <div class="crate-stat"><span>Tempo</span><strong id="crateBpm">84 BPM</strong></div>
+              <div class="crate-stat"><span>Key</span><strong id="crateKey">C major</strong></div>
+              <div class="crate-stat"><span>Mood</span><strong id="crateMood">warm &amp; easy</strong></div>
+            </div>
+            <div class="crate-quote">
+              <span aria-hidden="true">“</span>
+              <p>Play it once for the melody, twice for the bassline.</p>
+            </div>
+            <p class="crate-note">Every note is synthesized live in your browser — no audio files, just oscillators with a soft spot for vinyl crackle.</p>
+            <span class="crate-sticker" aria-hidden="true">play it<br>loud-ish</span>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section ears" id="ears">
+      <div class="ears-grid">
+        <div class="ears-copy reveal">
+          <p class="section-kicker">02 — The in-ear department</p>
+          <h2>He hears <em>all of it.</em></h2>
+          <p class="section-sub">Some people listen to songs. Hisham listens to the room, the reverb tail, the breath before the first verse. So the headphones on this page had to be IEMs — a proper seal, a wide stage, and every little layer left exactly where the mix put it.</p>
+
+          <div class="ear-features">
+            <article class="ear-feature">
+              <span class="feature-index">A</span>
+              <h3>Detail retrieval</h3>
+              <p>The third harmony, the pick against the string, the chair creak in the studio.</p>
+            </article>
+            <article class="ear-feature">
+              <span class="feature-index">B</span>
+              <h3>Soundstage</h3>
+              <p>Front row without the crowd. Left, right, and all the air in between.</p>
+            </article>
+            <article class="ear-feature">
+              <span class="feature-index">C</span>
+              <h3>Isolation</h3>
+              <p>Just him and the mix — the outside world politely put on hold.</p>
+            </article>
+          </div>
+
+          <blockquote class="ear-quote">
+            <span aria-hidden="true">“</span>
+            Good sound isn’t loud. It’s clear.
+          </blockquote>
+        </div>
+
+        <div class="iem-panel reveal">
+          <span class="iem-tag iem-tag-a">L</span>
+          <span class="iem-tag iem-tag-b">R</span>
+          <span class="iem-tag iem-tag-c">0.78 mm · 2-pin</span>
+          <span class="iem-tag iem-tag-d">sealed &amp; sorted</span>
+          <span class="iem-sticker" aria-hidden="true">for the<br>detail<br>people</span>
+
+          <svg class="iem-svg" viewBox="0 0 640 480" role="img" aria-labelledby="iemTitle iemDesc">
+            <title id="iemTitle">A pair of in-ear monitors with a braided cable</title>
+            <desc id="iemDesc">Two custom in-ear monitors in peach and teal resin, joined by a cable that loops down to a gold headphone jack.</desc>
+            <defs>
+              <linearGradient id="shellGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f6cdb0"/>
+                <stop offset=".55" stop-color="#e9a98f"/>
+                <stop offset="1" stop-color="#c97a5e"/>
+              </linearGradient>
+              <linearGradient id="faceGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4b8c85"/>
+                <stop offset=".55" stop-color="#7fb3a8"/>
+                <stop offset="1" stop-color="#d8b48e"/>
+              </linearGradient>
+              <linearGradient id="metalGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fbe9c9"/>
+                <stop offset=".5" stop-color="#cda873"/>
+                <stop offset="1" stop-color="#8d6a43"/>
+              </linearGradient>
+              <linearGradient id="tipGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f6ede0"/>
+                <stop offset="1" stop-color="#cbb79d"/>
+              </linearGradient>
+              <filter id="iemShadow" x="-30%" y="-30%" width="160%" height="180%">
+                <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#5b3425" flood-opacity=".28"/>
+              </filter>
+              <filter id="flameSoft"><feGaussianBlur stdDeviation="4"/></filter>
+            </defs>
+
+            <ellipse cx="320" cy="446" rx="210" ry="20" fill="#5b3425" opacity=".12" filter="url(#flameSoft)"/>
+
+            <g fill="none" stroke-linecap="round">
+              <path d="M173 129 C 126 68, 66 130, 104 204 C 134 264, 244 272, 288 330 C 304 348, 315 358, 326 360" stroke="#4a2d20" stroke-width="10" opacity=".18"/>
+              <path d="M173 129 C 126 68, 66 130, 104 204 C 134 264, 244 272, 288 330 C 304 348, 315 358, 326 360" stroke="#f3e3cc" stroke-width="6"/>
+              <path d="M173 129 C 126 68, 66 130, 104 204 C 134 264, 244 272, 288 330 C 304 348, 315 358, 326 360" stroke="#c9a879" stroke-width="1.4" stroke-dasharray="1 6" opacity=".8"/>
+              <path d="M467 121 C 516 62, 578 128, 538 202 C 508 262, 396 274, 350 332 C 334 350, 335 358, 326 360" stroke="#4a2d20" stroke-width="10" opacity=".18"/>
+              <path d="M467 121 C 516 62, 578 128, 538 202 C 508 262, 396 274, 350 332 C 334 350, 335 358, 326 360" stroke="#f3e3cc" stroke-width="6"/>
+              <path d="M467 121 C 516 62, 578 128, 538 202 C 508 262, 396 274, 350 332 C 334 350, 335 358, 326 360" stroke="#c9a879" stroke-width="1.4" stroke-dasharray="1 6" opacity=".8"/>
+              <path d="M326 358 C 326 382, 326 400, 326 412" stroke="#4a2d20" stroke-width="10" opacity=".18"/>
+              <path d="M326 358 C 326 382, 326 400, 326 412" stroke="#f3e3cc" stroke-width="6"/>
+              <path class="iem-signal" d="M173 129 C 126 68, 66 130, 104 204 C 134 264, 244 272, 288 330 C 304 348, 315 358, 326 360 M467 121 C 516 62, 578 128, 538 202 C 508 262, 396 274, 350 332 C 334 350, 335 358, 326 360 M326 358 L326 412" stroke="#2e6f68" stroke-width="2.2" stroke-dasharray="3 14"/>
+            </g>
+
+            <g filter="url(#iemShadow)">
+              <g transform="translate(192 200) rotate(-15)">
+                <ellipse cx="8" cy="46" rx="76" ry="56" fill="#5b3425" opacity=".12" filter="url(#flameSoft)"/>
+                <path d="M30 44 L66 78" stroke="url(#metalGrad)" stroke-width="18" stroke-linecap="round"/>
+                <path d="M64 76 L82 92" stroke="url(#tipGrad)" stroke-width="22" stroke-linecap="round"/>
+                <ellipse cx="80" cy="91" rx="9" ry="12" transform="rotate(42 80 91)" fill="#9e8a70" opacity=".85"/>
+                <path d="M-62 -8 C -70 -40, -44 -68, -2 -70 C 40 -72, 64 -46, 68 -12 C 72 18, 56 48, 30 62 C 6 74, -22 66, -40 48 C -58 30, -54 12, -62 -8 Z" fill="url(#shellGrad)" stroke="#a9644a" stroke-width="1.6"/>
+                <path d="M-44 -18 C -46 -42, -26 -58, 0 -58 C 28 -58, 48 -38, 48 -12 C 48 12, 36 34, 16 44 C -4 54, -24 46, -36 28 C -48 10, -42 2, -44 -18 Z" fill="url(#faceGrad)" stroke="#2c6a64" stroke-width="1.4" opacity=".97"/>
+                <path d="M-34 -28 C -22 -44, -2 -48, 14 -40 C 28 -33, 32 -20, 24 -10 C 16 0, 0 2, -8 -6" fill="none" stroke="#f8eddd" stroke-width="2" opacity=".3" stroke-linecap="round"/>
+                <path d="M-30 20 C -22 12, -18 2, -20 -8 M 20 32 C 28 26, 32 18, 32 8" fill="none" stroke="#f8eddd" stroke-width="1.5" opacity=".2" stroke-linecap="round"/>
+                <circle cx="26" cy="20" r="3.3" fill="#1c4b47" opacity=".45"/>
+                <circle cx="12" cy="30" r="1.8" fill="#1c4b47" opacity=".3"/>
+                <path d="M-58 -14 C -54 -40, -32 -60, -2 -64" fill="none" stroke="#fff3e2" stroke-width="3" opacity=".55" stroke-linecap="round"/>
+                <rect x="-16" y="-80" width="32" height="13" rx="4" fill="url(#metalGrad)" stroke="#6d4f31" stroke-width="1.2"/>
+                <circle cx="-7" cy="-73.5" r="2.5" fill="#5b3425"/>
+                <circle cx="7" cy="-73.5" r="2.5" fill="#5b3425"/>
+              </g>
+
+              <g transform="translate(448 192) rotate(15) scale(-1 1)">
+                <ellipse cx="8" cy="46" rx="76" ry="56" fill="#5b3425" opacity=".12" filter="url(#flameSoft)"/>
+                <path d="M30 44 L66 78" stroke="url(#metalGrad)" stroke-width="18" stroke-linecap="round"/>
+                <path d="M64 76 L82 92" stroke="url(#tipGrad)" stroke-width="22" stroke-linecap="round"/>
+                <ellipse cx="80" cy="91" rx="9" ry="12" transform="rotate(42 80 91)" fill="#9e8a70" opacity=".85"/>
+                <path d="M-62 -8 C -70 -40, -44 -68, -2 -70 C 40 -72, 64 -46, 68 -12 C 72 18, 56 48, 30 62 C 6 74, -22 66, -40 48 C -58 30, -54 12, -62 -8 Z" fill="url(#shellGrad)" stroke="#a9644a" stroke-width="1.6"/>
+                <path d="M-44 -18 C -46 -42, -26 -58, 0 -58 C 28 -58, 48 -38, 48 -12 C 48 12, 36 34, 16 44 C -4 54, -24 46, -36 28 C -48 10, -42 2, -44 -18 Z" fill="url(#faceGrad)" stroke="#2c6a64" stroke-width="1.4" opacity=".97"/>
+                <path d="M-34 -28 C -22 -44, -2 -48, 14 -40 C 28 -33, 32 -20, 24 -10 C 16 0, 0 2, -8 -6" fill="none" stroke="#f8eddd" stroke-width="2" opacity=".3" stroke-linecap="round"/>
+                <path d="M-30 20 C -22 12, -18 2, -20 -8 M 20 32 C 28 26, 32 18, 32 8" fill="none" stroke="#f8eddd" stroke-width="1.5" opacity=".2" stroke-linecap="round"/>
+                <circle cx="26" cy="20" r="3.3" fill="#1c4b47" opacity=".45"/>
+                <circle cx="12" cy="30" r="1.8" fill="#1c4b47" opacity=".3"/>
+                <path d="M-58 -14 C -54 -40, -32 -60, -2 -64" fill="none" stroke="#fff3e2" stroke-width="3" opacity=".55" stroke-linecap="round"/>
+                <rect x="-16" y="-80" width="32" height="13" rx="4" fill="url(#metalGrad)" stroke="#6d4f31" stroke-width="1.2"/>
+                <circle cx="-7" cy="-73.5" r="2.5" fill="#5b3425"/>
+                <circle cx="7" cy="-73.5" r="2.5" fill="#5b3425"/>
+              </g>
+            </g>
+
+            <g>
+              <circle cx="326" cy="360" r="9" fill="url(#metalGrad)" stroke="#7a5a3a" stroke-width="1.5"/>
+              <rect x="312" y="412" width="28" height="34" rx="10" fill="url(#metalGrad)" stroke="#7a5a3a" stroke-width="1.5"/>
+              <rect x="318" y="442" width="16" height="14" rx="4" fill="#5b3425"/>
+              <path d="M322 456 v10 M330 456 v10" stroke="#cda873" stroke-width="3" stroke-linecap="round"/>
+            </g>
+
+            <g class="iem-sparkles" fill="#2e6f68">
+              <path d="M116 120 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z" opacity=".55"/>
+              <path d="M528 286 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z" opacity=".45"/>
+              <circle cx="556" cy="104" r="4" opacity=".4"/>
+              <circle cx="92" cy="330" r="5" opacity=".3"/>
+            </g>
+          </svg>
+
+          <div class="iem-caption">
+            <span class="iem-caption-dot" aria-hidden="true"></span>
+            <span><strong>In-ear monitors</strong> — because “good enough” was never the point.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section side-b" id="side-b">
+      <div class="side-b-panel reveal">
+        <span class="side-b-stamp" aria-hidden="true">Side B</span>
+        <div class="side-b-head">
+          <p class="section-kicker section-kicker-light">03 — Side B, track by track</p>
+          <h2>Twenty-three little <em>favourites.</em></h2>
+          <p class="section-sub">A non-exhaustive list of things that make Hisham, Hisham. Play them back to back, no skips.</p>
+        </div>
+        <ol class="tracks-23" aria-label="Twenty-three things we love about Hisham">
+          <li><span>01</span>The laugh that arrives a second early</li>
+          <li><span>02</span>Noticing the bassline before the lyrics</li>
+          <li><span>03</span>Bewada</li>
+          <li><span>04</span>Recommending the exact right track</li>
+          <li><span>05</span>Patience for a slow-burn album</li>
+          <li><span>06</span>That one expressive eyebrow</li>
+          <li><span>07</span>Rothuru on stupid things</li>
+          <li><span>08</span>Cherry on principle</li>
+          <li><span>09</span>Keeping screenshots “for later”</li>
+          <li><span>10</span>The best CR for Game design</li>
+          <li><span>11</span>Volume at exactly 73%</li>
+          <li><span>12</span>Item boy</li>
+          <li><span>13</span>The honest review, delivered kindly</li>
+          <li><span>14</span>Late-night support 24/7 </li>
+          <li><span>15</span>Kindness without an audience</li>
+          <li><span>16</span>Remembering the tiny details</li>
+          <li><span>17</span>Making people feel properly heard</li>
+          <li><span>18</span>Iphone ka choda/provider</li>
+          <li><span>19</span>Being genuinely, unmistakably him</li>
+          <li><span>20</span>Food critique but with bad taste(ex)</li>
+          <li><span>21</span>Tehreen Paglu</li>
+        </ol>
+        <p class="side-b-foot"><span aria-hidden="true">✦</span> Total runtime: one very good year.</p>
+      </div>
+    </section>
+
+    <section class="section cake" id="cake">
+      <div class="cake-grid">
+        <div class="cake-copy reveal">
+          <p class="section-kicker">04 — The sweet side</p>
+          <h2>Save room for <em>the cake.</em></h2>
+          <p class="section-sub">The brief was simple: blueberry compote, a sour-cherry swirl, a graham base with slightly too much butter, and one slice that is mostly crust. Blow the candles and make it official.</p>
+          <div class="cake-actions">
+            <button class="btn btn-primary" id="wishBtn" type="button">
+              <span id="wishBtnLabel">Blow out the candles</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c2.5 2.8 4 5 4 7.5a4 4 0 0 1-8 0C8 8 9.5 5.8 12 3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="cake-hint" id="wishHint">Two candles, one wish, zero calories.</span>
+          </div>
+          <p class="cake-quote">“A cheesecake is just a record you can eat. Both get better with a little crackle.”</p>
+        </div>
+
+        <div class="cake-stage reveal" id="cakeStage">
+          <span class="cake-sticker" aria-hidden="true">blueberry<br>+ cherry</span>
+          <div class="wish-message" id="wishMessage" role="status" aria-live="polite">
+            <strong>Wish made.</strong>
+            <span>Now somebody please cut a slice.</span>
+          </div>
+
+          <svg class="cake-svg" viewBox="0 0 560 480" role="img" aria-labelledby="cakeTitle cakeDesc">
+            <title id="cakeTitle">A blueberry and cherry cheesecake with two lit candles</title>
+            <desc id="cakeDesc">A creamy cheesecake on a pastel plate, topped with blueberries, cherries and two lit candles marked 2 and 3.</desc>
+            <defs>
+              <linearGradient id="plateGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fdf7ec"/>
+                <stop offset="1" stop-color="#e5cfb1"/>
+              </linearGradient>
+              <linearGradient id="cakeSideGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f3d8a8"/>
+                <stop offset="1" stop-color="#dfb273"/>
+              </linearGradient>
+              <linearGradient id="compoteGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#9272bb"/>
+                <stop offset="1" stop-color="#5c3f84"/>
+              </linearGradient>
+              <linearGradient id="cherryGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#cf5561"/>
+                <stop offset="1" stop-color="#931f32"/>
+              </linearGradient>
+              <linearGradient id="candleGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#d97645"/>
+                <stop offset=".5" stop-color="#c8683b"/>
+                <stop offset="1" stop-color="#9d4726"/>
+              </linearGradient>
+              <linearGradient id="flameGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fff3c4"/>
+                <stop offset=".45" stop-color="#f5c05c"/>
+                <stop offset="1" stop-color="#d9673a"/>
+              </linearGradient>
+              <filter id="cakeShadow" x="-30%" y="-30%" width="160%" height="170%">
+                <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#5b3425" flood-opacity=".2"/>
+              </filter>
+              <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
+            </defs>
+
+            <ellipse cx="280" cy="414" rx="224" ry="34" fill="#5b3425" opacity=".14" filter="url(#blur6)"/>
+
+            <g filter="url(#cakeShadow)">
+              <ellipse cx="280" cy="396" rx="222" ry="48" fill="url(#plateGrad)" stroke="#c7a677" stroke-width="2"/>
+              <ellipse cx="280" cy="390" rx="170" ry="34" fill="#ead6b8" opacity=".65"/>
+
+              <path d="M122 302 V350 C122 380 194 398 280 398 C366 398 438 380 438 350 V302 Z" fill="url(#cakeSideGrad)"/>
+              <g fill="#c49558" opacity=".32">
+                <circle cx="164" cy="352" r="2.4"/><circle cx="196" cy="372" r="2"/><circle cx="238" cy="360" r="2.6"/>
+                <circle cx="280" cy="382" r="2.1"/><circle cx="322" cy="366" r="2.4"/><circle cx="366" cy="374" r="2"/>
+                <circle cx="400" cy="352" r="2.6"/><circle cx="342" cy="344" r="2"/><circle cx="212" cy="346" r="2"/>
+              </g>
+
+              <path d="M122 306 C 126 338, 160 344, 178 328 C 188 320, 196 326, 198 340 C 202 356, 232 360, 246 340 C 260 320, 282 326, 288 346 C 296 366, 330 366, 338 342 C 344 324, 364 320, 374 336 C 390 358, 422 350, 438 330 V302 Z" fill="url(#compoteGrad)" opacity=".68"/>
+              <path d="M122 306 C 140 322, 160 326, 178 318 C 198 310, 214 318, 222 332 C 236 352, 268 350, 278 330 C 286 312, 308 310, 320 326 C 336 348, 368 346, 380 326 C 392 308, 416 312, 438 324 V302 Z" fill="url(#compoteGrad)" opacity=".55"/>
+
+              <ellipse cx="280" cy="302" rx="158" ry="55" fill="#f1d4a0"/>
+              <ellipse cx="280" cy="297" rx="148" ry="48" fill="#fdf2d9"/>
+              <ellipse cx="280" cy="294" rx="118" ry="35" fill="#fff9ea" opacity=".8"/>
+
+              <path d="M178 300 C 202 278, 226 286, 238 302 C 250 318, 274 322, 288 304 C 300 288, 326 286, 340 302 C 354 318, 382 312, 394 294" fill="none" stroke="url(#compoteGrad)" stroke-width="15" stroke-linecap="round" opacity=".75"/>
+              <path d="M196 282 C 220 292, 244 282, 256 270 M 316 272 C 334 284, 358 284, 374 272" fill="none" stroke="#fff8e8" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+
+              <g class="toppings">
+                <g fill="url(#cherryGrad)">
+                  <circle cx="186" cy="296" r="15"/><circle cx="372" cy="288" r="13"/><circle cx="320" cy="326" r="11"/><circle cx="234" cy="330" r="10"/>
+                </g>
+                <g fill="#f8eddd" opacity=".42">
+                  <ellipse cx="181" cy="290" rx="5" ry="3"/><ellipse cx="368" cy="283" rx="4" ry="2.4"/><ellipse cx="317" cy="322" rx="3.4" ry="2"/>
+                </g>
+                <g fill="none" stroke="#5c3f2c" stroke-width="2.4" stroke-linecap="round">
+                  <path d="M186 281 C 188 268, 198 262, 208 260"/>
+                  <path d="M372 275 C 374 262, 384 256, 394 256"/>
+                </g>
+                <g fill="#6c4f96">
+                  <circle cx="212" cy="274" r="8"/><circle cx="226" cy="282" r="6.5"/><circle cx="348" cy="306" r="8"/><circle cx="362" cy="314" r="6"/>
+                  <circle cx="292" cy="320" r="7"/><circle cx="278" cy="330" r="5.5"/><circle cx="398" cy="306" r="6.5"/><circle cx="162" cy="314" r="6"/>
+                </g>
+                <g fill="#a98bc8" opacity=".5">
+                  <circle cx="209" cy="271" r="2.4"/><circle cx="345" cy="303" r="2.2"/><circle cx="289" cy="317" r="2"/>
+                </g>
+              </g>
+
+              <g class="candle candle-2">
+                <rect x="214" y="196" width="34" height="106" rx="12" fill="url(#candleGrad)" stroke="#8f4325" stroke-width="2"/>
+                <path d="M214 224 h34 M214 260 h34" stroke="#f8eddd" stroke-width="3" opacity=".25"/>
+                <text x="231" y="263" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="38" font-weight="600" fill="#fff4e2">2</text>
+                <line x1="231" y1="196" x2="231" y2="184" stroke="#4a2d20" stroke-width="3" stroke-linecap="round"/>
+                <g class="flame">
+                  <ellipse cx="231" cy="171" rx="17" ry="24" fill="#f5b84f" opacity=".18" filter="url(#blur6)"/>
+                  <path d="M231 148 C 243 162, 246 171, 243 179 C 240 188, 222 188, 219 179 C 216 171, 220 160, 231 148 Z" fill="url(#flameGrad)"/>
+                  <path d="M231 160 C 237 168, 238 174, 236 178 C 234 183, 227 182, 226 177 C 225 172, 227 166, 231 160 Z" fill="#fff6d4" opacity=".85"/>
+                </g>
+                <g class="smoke" aria-hidden="true">
+                  <path d="M231 174 C 220 158, 240 148, 230 132 C 222 119, 238 112, 232 98"/>
+                  <path d="M231 174 C 242 160, 224 150, 234 136" opacity=".55"/>
+                </g>
+              </g>
+
+              <g class="candle candle-3">
+                <rect x="310" y="186" width="34" height="116" rx="12" fill="url(#candleGrad)" stroke="#8f4325" stroke-width="2"/>
+                <path d="M310 216 h34 M310 254 h34" stroke="#f8eddd" stroke-width="3" opacity=".25"/>
+                <text x="327" y="256" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="38" font-weight="600" fill="#fff4e2">3</text>
+                <line x1="327" y1="186" x2="327" y2="174" stroke="#4a2d20" stroke-width="3" stroke-linecap="round"/>
+                <g class="flame">
+                  <ellipse cx="327" cy="161" rx="17" ry="24" fill="#f5b84f" opacity=".18" filter="url(#blur6)"/>
+                  <path d="M327 138 C 339 152, 342 161, 339 169 C 336 178, 318 178, 315 169 C 312 161, 316 150, 327 138 Z" fill="url(#flameGrad)"/>
+                  <path d="M327 150 C 333 158, 334 164, 332 168 C 330 173, 323 172, 322 167 C 321 162, 323 156, 327 150 Z" fill="#fff6d4" opacity=".85"/>
+                </g>
+                <g class="smoke" aria-hidden="true">
+                  <path d="M327 164 C 316 148, 336 138, 326 122 C 318 109, 334 102, 328 88"/>
+                  <path d="M327 164 C 338 150, 320 140, 330 126" opacity=".55"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+
+          <span class="cake-plate-note" aria-hidden="true">served at 33⅓ rpm</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section-head reveal">
+        <p class="section-kicker">05 — The contact sheet</p>
+        <h2>Twenty-three, <em>in frames.</em></h2>
+        <p class="section-sub">A rolling reel of the good stuff: first spins, golden hours, good ears and cake with the crust left on. Drag the reel, use the arrows, or tap a frame to open it full size.</p>
+      </div>
+
+      <div class="gallery-reel reveal" data-gallery>
+        <div class="reel-frame">
+          <button class="reel-arrow reel-arrow-prev" type="button" data-reel-prev aria-label="Previous polaroids">
+            <span aria-hidden="true">←</span>
+          </button>
+          <div class="reel-viewport">
+            <div class="reel-track" id="reelTrack" tabindex="0" role="group" aria-label="Polaroid gallery. Use the left and right arrow keys to browse."></div>
+          </div>
+          <button class="reel-arrow reel-arrow-next" type="button" data-reel-next aria-label="Next polaroids">
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+        <div class="reel-footer">
+          <div class="reel-dots" id="reelDots"></div>
+          <p class="reel-hint">Drag the reel · tap a frame to open it</p>
+          <p class="reel-count mono" id="reelCount">01 / 06</p>
+        </div>
+      </div>
+
+      <noscript>
+        <p class="reel-noscript">The polaroid reel needs JavaScript. Everything else on the sleeve still works.</p>
+      </noscript>
+    </section>
+
+    <section class="section sleeve" id="sleeve">
+      <div class="sleeve-grid">
+        <div class="sleeve-copy reveal">
+          <p class="section-kicker">06 — The sleeve</p>
+          <h2>Sign the <em>sleeve.</em></h2>
+          <p class="section-sub">Leave a birthday line for Hisham. On the live site it lands on the shared sleeve for everyone; offline it still saves in this browser. Keep it short, keep it goldie.</p>
+
+          <form class="note-form" id="noteForm">
+            <label class="sr-only" for="noteName">Your name</label>
+            <input class="note-name" id="noteName" name="name" type="text" maxlength="24" placeholder="Your name (optional)" autocomplete="name">
+            <label class="sr-only" for="noteInput">Your birthday note</label>
+            <textarea id="noteInput" name="note" rows="3" maxlength="220" placeholder="Write something worth keeping…" required></textarea>
+            <div class="note-form-row">
+              <span class="note-count"><span id="noteCount">0</span>/220</span>
+              <button class="btn btn-primary" type="submit">Pin the note <span aria-hidden="true">✦</span></button>
+            </div>
+            <p class="note-status" id="noteStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="sleeve-tip">
+            <span class="sleeve-tip-icon" aria-hidden="true">✎</span>
+            <p>Tip: “oldie hai aur goldie bhi” is already taken, but only because it’s true.</p>
+          </div>
+        </div>
+
+        <div class="note-wall-wrap reveal">
+          <div class="note-wall-head">
+            <span>On the sleeve</span>
+            <span class="mono note-wall-meta"><span id="noteTotal">05 notes</span> · <span class="note-sync" id="noteSync">this device</span></span>
+          </div>
+          <div class="note-wall" id="noteWall"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="photo-lightbox" id="photoLightbox" aria-labelledby="lightboxCaption">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close media">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="lightbox-photo">
+        <img id="lightboxImg" alt="">
+        <video id="lightboxVideo" controls playsinline preload="metadata" hidden></video>
+      </div>
+      <div class="lightbox-bar">
+        <p id="lightboxCaption"></p>
+        <div class="lightbox-nav">
+          <button type="button" data-lightbox-prev aria-label="Previous item"><span aria-hidden="true">←</span></button>
+          <span class="mono" id="lightboxCount"></span>
+          <button type="button" data-lightbox-next aria-label="Next item"><span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-foot">
+    <div class="foot-inner">
+      <div class="foot-top">
+        <p class="foot-kicker">Pressed with warmth, wire &amp; whipped cream</p>
+        <p class="foot-tag">Oldie hai aur goldie bhi</p>
+      </div>
+      <div class="foot-main">
+        <p class="foot-big">Happy 23,<br><em>Hisham.</em></p>
+        <div class="foot-rec">
+          <div class="foot-disc vinyl" aria-hidden="true">
+            <span class="foot-disc-label">23</span>
+          </div>
+          <p>Side A · Side B<br>and every side after.</p>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 · Oldie &amp; Goldie Records</span>
+        <span class="foot-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <a href="#top">Back to the top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="mini-player" id="miniPlayer" hidden aria-label="Now playing">
+    <button class="mini-disc vinyl" id="miniDisc" type="button" aria-label="Go to the listening room">
+      <span class="mini-disc-label">23</span>
+    </button>
+    <div class="mini-info">
+      <span class="mini-kicker">Now playing</span>
+      <strong id="miniTitle">Cherry On Top</strong>
+    </div>
+    <span class="eq eq-mini" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <button class="mini-pause" id="miniPause" type="button" aria-label="Pause record">
+      <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.4v14H7zM13.6 5H17v14h-3.4z" fill="currentColor"/></svg>
+      <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+    </button>
+  </aside>
+
+  <noscript>
+    <p class="noscript">The record player, confetti, photo reel and sleeve notes need JavaScript. The birthday wishes work without it: happy 23rd, Hisham!</p>
+  </noscript>
+
+  <script src="assets/gallery/photos.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/player.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

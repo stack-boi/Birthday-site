@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" role="img" aria-labelledby="title">
+  <title id="title">A retro cassette tape labelled Side A 23</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b6d1c8"/>
+      <stop offset=".55" stop-color="#4b8b80"/>
+      <stop offset="1" stop-color="#2e6f68"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf6ea"/>
+      <stop offset="1" stop-color="#e8d8bf"/>
+    </linearGradient>
+    <radialGradient id="reel" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#5b3425"/>
+      <stop offset=".7" stop-color="#2a1a13"/>
+      <stop offset="1" stop-color="#171310"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#173f3b" flood-opacity=".45"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <circle cx="820" cy="160" r="260" fill="#f8eddd" opacity=".16"/>
+  <circle cx="150" cy="860" r="300" fill="#f0d59c" opacity=".12"/>
+  <g transform="rotate(-6 500 500)" opacity=".18" fill="none" stroke="#f8eddd" stroke-width="3">
+    <rect x="70" y="240" width="860" height="560" rx="40"/>
+    <rect x="120" y="300" width="760" height="440" rx="30"/>
+  </g>
+
+  <g transform="rotate(-7 500 510)" filter="url(#shadow)">
+    <!-- shell -->
+    <rect x="170" y="300" width="660" height="430" rx="38" fill="url(#body)"/>
+    <rect x="192" y="322" width="616" height="386" rx="26" fill="none" stroke="#c9a97f" stroke-width="3"/>
+    <rect x="170" y="300" width="660" height="86" rx="38" fill="#eeb6ab"/>
+    <rect x="170" y="386" width="660" height="8" fill="#c8683b" opacity=".5"/>
+
+    <!-- top label -->
+    <text x="500" y="350" text-anchor="middle" font-family="'Courier New', monospace" font-size="26" fill="#3b251c" letter-spacing="8">SIDE A · 23</text>
+    <text x="500" y="378" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#7a3f28" letter-spacing="4">WARM PRESS · 33⅓ RPM</text>
+
+    <!-- tape window -->
+    <rect x="258" y="430" width="484" height="196" rx="24" fill="#3b251c"/>
+    <rect x="278" y="450" width="444" height="156" rx="16" fill="#5b3425"/>
+    <g>
+      <circle cx="392" cy="528" r="64" fill="url(#reel)"/>
+      <circle cx="392" cy="528" r="42" fill="#8d4c31"/>
+      <g fill="#f0d59c">
+        <circle cx="392" cy="492" r="7"/><circle cx="392" cy="564" r="7"/>
+        <circle cx="356" cy="528" r="7"/><circle cx="428" cy="528" r="7"/>
+      </g>
+      <circle cx="392" cy="528" r="12" fill="#f8eddd"/>
+    </g>
+    <g>
+      <circle cx="608" cy="528" r="64" fill="url(#reel)"/>
+      <circle cx="608" cy="528" r="42" fill="#8d4c31"/>
+      <g fill="#f0d59c">
+        <circle cx="608" cy="492" r="7"/><circle cx="608" cy="564" r="7"/>
+        <circle cx="572" cy="528" r="7"/><circle cx="644" cy="528" r="7"/>
+      </g>
+      <circle cx="608" cy="528" r="12" fill="#f8eddd"/>
+    </g>
+    <path d="M392 528h216" stroke="#3b251c" stroke-width="14" opacity=".55"/>
+    <path d="M300 590c50 22 350 22 400 0" fill="none" stroke="#2a1a13" stroke-opacity=".3" stroke-width="3"/>
+
+    <!-- bottom label -->
+    <text x="500" y="680" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-style="italic" fill="#3b251c">oldie hai aur goldie bhi</text>
+
+    <!-- screws -->
+    <g fill="#8d4c31">
+      <circle cx="212" cy="342" r="8"/><circle cx="788" cy="342" r="8"/>
+      <circle cx="212" cy="688" r="8"/><circle cx="788" cy="688" r="8"/>
+    </g>
+    <g fill="#c9a97f">
+      <path d="M202 342h20M212 332v20M778 342h20M788 332v20M202 688h20M212 678v20M778 688h20M788 678v20" stroke="#c9a97f" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- pencil -->
+  <g transform="rotate(30 810 760)" filter="url(#shadow)">
+    <rect x="790" y="620" width="34" height="300" rx="6" fill="#f0d59c"/>
+    <rect x="790" y="620" width="12" height="300" fill="#fff6df" opacity=".5"/>
+    <path d="M790 920h34l-17 42Z" fill="#e8b48d"/>
+    <path d="M802 946h10l-5 16Z" fill="#3b251c"/>
+    <rect x="790" y="620" width="34" height="26" fill="#eeb6ab"/>
+  </g>
+
+  <rect width="1000" height="1000" filter="url(#grain)" opacity=".5"/>
+</svg>

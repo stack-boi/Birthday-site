@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" role="img" aria-labelledby="title">
+  <title id="title">A golden-hour window with a record leaning on the sill</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0d59c"/>
+      <stop offset=".45" stop-color="#f2b184"/>
+      <stop offset=".75" stop-color="#e88f74"/>
+      <stop offset="1" stop-color="#b23a48"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7f8f76"/>
+      <stop offset="1" stop-color="#2e6f68"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff8e8"/>
+      <stop offset=".6" stop-color="#f8e3b0"/>
+      <stop offset="1" stop-color="#f0d59c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b3425"/>
+      <stop offset=".5" stop-color="#3b251c"/>
+      <stop offset="1" stop-color="#2a1a13"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .12"/></feComponentTransfer>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#3b251c" flood-opacity=".4"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#f8eddd"/>
+  <rect x="0" y="0" width="1000" height="1000" fill="#e8d8bf" opacity=".55"/>
+
+  <!-- window hole and view -->
+  <rect x="150" y="90" width="700" height="650" rx="8" fill="url(#sky)"/>
+  <circle cx="500" cy="430" r="190" fill="url(#sun)"/>
+  <circle cx="500" cy="430" r="92" fill="#fff3cf"/>
+  <path d="M150 520c90-54 160-44 240 6s150 48 230 2 160-44 230 6v206H150Z" fill="url(#sea)"/>
+  <path d="M150 600c80-28 150-16 220 18s150 34 220 8 170-30 260 4v110H150Z" fill="#245d58" opacity=".8"/>
+  <g stroke="#fff8e8" stroke-opacity=".35" stroke-width="3">
+    <path d="M250 570h90M390 548h70M560 560h110M720 538h80"/>
+  </g>
+  <path d="M420 560c18-50 56-74 86-74s62 20 80 64" fill="#2e6f68" opacity=".55"/>
+
+  <!-- window frame -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="60" width="760" height="54" rx="9" fill="url(#frame)"/>
+    <rect x="120" y="716" width="760" height="54" rx="9" fill="url(#frame)"/>
+    <rect x="120" y="60" width="54" height="710" rx="9" fill="url(#frame)"/>
+    <rect x="826" y="60" width="54" height="710" rx="9" fill="url(#frame)"/>
+    <rect x="480" y="90" width="28" height="650" fill="url(#frame)"/>
+    <rect x="150" y="400" width="700" height="26" fill="url(#frame)"/>
+  </g>
+
+  <!-- sill -->
+  <g filter="url(#shadow)">
+    <rect x="88" y="756" width="824" height="46" rx="10" fill="#8d4c31"/>
+    <rect x="88" y="756" width="824" height="10" rx="5" fill="#c9854f"/>
+  </g>
+
+  <!-- plant -->
+  <g transform="translate(720 650)">
+    <path d="M84 110c-36-58-30-122 10-166 32 44 34 110-10 166Z" fill="#3f6b3c"/>
+    <path d="M84 110c62-24 104-74 110-138-64 6-108 58-110 138Z" fill="#5d8a4d"/>
+    <path d="M84 110C28 74-6 20 2-44c58 18 92 76 82 154Z" fill="#2e6f68"/>
+    <path d="M22 104h124l-14 120H36Z" fill="#c8683b"/>
+    <path d="M22 104h124l-4 30H26Z" fill="#e08a5c"/>
+  </g>
+
+  <!-- record leaning on sill -->
+  <g transform="rotate(-9 260 650)" filter="url(#shadow)">
+    <circle cx="260" cy="636" r="148" fill="#171310"/>
+    <g fill="none" stroke="#4f4038" stroke-opacity=".65">
+      <circle cx="260" cy="636" r="138"/><circle cx="260" cy="636" r="124"/><circle cx="260" cy="636" r="110"/><circle cx="260" cy="636" r="96"/>
+    </g>
+    <circle cx="260" cy="636" r="54" fill="#f2c6a0"/>
+    <circle cx="260" cy="636" r="54" fill="none" stroke="#c8683b" stroke-opacity=".5" stroke-width="2"/>
+    <text x="260" y="632" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#3b251c">23</text>
+    <text x="260" y="654" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#7a3f28" letter-spacing="2">SIDE A</text>
+    <circle cx="260" cy="636" r="5" fill="#f8eddd"/>
+  </g>
+
+  <!-- light wash -->
+  <path d="M150 90h700v650H150Z" fill="#fff3cf" opacity=".08"/>
+  <path d="M150 90l350 650h-90L150 260Z" fill="#fff8e8" opacity=".12"/>
+
+  <rect width="1000" height="1000" filter="url(#grain)" opacity=".5"/>
+</svg>
