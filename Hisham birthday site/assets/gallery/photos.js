@@ -31,6 +31,12 @@ window.HISHAM_GALLERY = [
     "alt": "Apun shreya and hisham gang in mussoorie ."
   },
   {
+    "src": "assets/gallery/nandini and hisham.jpeg",
+    "type": "image",
+    "caption": "Heppy 23 years of existence Mallu Mulla! ",
+    "alt": "Nandini and Hisham together."
+  },
+  {
     "src": "assets/gallery/Point.jpeg",
     "type": "image",
     "caption": "Point",
@@ -51,13 +57,7 @@ window.HISHAM_GALLERY = [
   {
     "src": "assets/gallery/swimming.jpeg",
     "type": "image",
-    "caption": "the face when you haggu in the water ",
-    "alt": "Swimming mms leak hisham."
-  },
-   {
-    "src": "assets/gallery/nandini and hisham.jpeg",
-    "type": "image",
-    "caption": "Heppy 23 years of existence Mallu Mulla! ",
-    "alt": "Nandini and Hisham together."
-  },
+    "caption": "the face you make when you haggu in the water ",
+    "alt": "Hisham sitting on the edge of the world."
+  }
 ];
